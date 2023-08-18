@@ -132,25 +132,21 @@ function renderButtons(){
   }else{
     document.querySelector(".btn-patty").classList.remove("active")
   }
-
   if (state.Cheese ==true){
     document.querySelector(".btn-cheese").classList.add("active")
   }else{
     document.querySelector(".btn-cheese").classList.remove("active")
   }
-
   if (state.Onions ==true){
     document.querySelector(".btn-onions").classList.add("active")
   }else{
     document.querySelector(".btn-onions").classList.remove("active")
   }
-
   if (state.Lettuce ==true){
     document.querySelector(".btn-lettuce").classList.add("active")
   }else{
     document.querySelector(".btn-lettuce").classList.remove("active")
   }
-  
   if (state.Tomatoes ==true){
     document.querySelector(".btn-tomatoes").classList.add("active")
   }else{
@@ -161,8 +157,8 @@ function renderButtons(){
 //Challenge 2 - Render only the items selected in the ingredients board based on the state
 // renderIngredientsBoard()
 function renderIngredientsBoard(){
-  let container = document.querySelectorAll(".items")
-  for (let i=0; i< container.length;i++){
+  let item = document.querySelectorAll(".items")
+  for (let i=0; i< item.length;i++){
     let j = container[i].textContent
     if (state[j]!=true){
       container[i].style.display = 'none'
